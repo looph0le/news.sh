@@ -1,2 +1,2 @@
 # news.sh
-A cli tool to watch Live news
+A tool to watch Live news
