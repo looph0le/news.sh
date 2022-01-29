@@ -33,8 +33,7 @@ case $1 in
 		mpv $ZEENEWS
 	;;
 	-d | --dmenu)
-		#printf $NAMES | dmenu -p "SELECT: " -l 20 
-		echo "This part is under development..."
+		echo "This part is under development..." | dmenu -p "Part is under development"
 	;;
 	*)
 	echo "Wrong argument, Try again... or use --help"
