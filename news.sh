@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#printf "Select the options: \n 1. ABP news \n 2. Republic World \n 3. Zee News"
-
-#printf "\n\nEnter: "
-
 
 #News Streams
 ABPNEWS="https://www.youtube.com/watch?v=nyd-xznCpJc"
@@ -22,8 +18,7 @@ case $1 in
 		   -abp or --abpnews [ABP news]\n
 		   -rp or --republicworld [RepublicWorld News]\n
 		   -zn or --zeenews [ZeeNews]\n
-		   -d or --dmenu, to use dmenu integration"
-		   
+		   -d or --dmenu, to use dmenu integration\n\n"
 	;;
 	-abp | --abpnews) 
 		echo $ACCEPTED "ABP News"
@@ -38,7 +33,8 @@ case $1 in
 		mpv $ZEENEWS
 	;;
 	-d | --dmenu)
-		printf $NAMES | dmenu -p "SELECT: " -l 20 
+		#printf $NAMES | dmenu -p "SELECT: " -l 20 
+		echo "This part is under development..."
 	;;
 	*)
 	echo "Wrong argument, Try again... or use --help"
